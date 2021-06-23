@@ -1,1 +1,1 @@
-["com.example.helloworld.GreeterClient","com.example.helloworld.GreeterServer"]
+["io.mahesh.grpcakka.GreeterClient","io.mahesh.grpcakka.GreeterServer"]

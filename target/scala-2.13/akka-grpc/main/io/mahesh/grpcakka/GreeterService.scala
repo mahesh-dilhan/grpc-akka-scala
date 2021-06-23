@@ -3,7 +3,6 @@
 package io.mahesh.grpcakka
 
 import akka.annotation.ApiMayChange
-import io.mahesh.grpcakka
 
 /**
  * The greeting service definition.
@@ -13,7 +12,7 @@ trait GreeterService {
   /**
    * Sends a greeting
    */
-  def sayHello(in: HelloRequest): scala.concurrent.Future[HelloReply]
+  def sayHello(in: io.mahesh.grpcakka.HelloRequest): scala.concurrent.Future[io.mahesh.grpcakka.HelloReply]
   
   /**
    * #service-request-reply
@@ -22,7 +21,7 @@ trait GreeterService {
    * sent out as corresponding HelloReply. From
    * all clients to all clients, like a chat room.
    */
-  def sayHelloToAll(in: akka.stream.scaladsl.Source[HelloRequest, akka.NotUsed]): akka.stream.scaladsl.Source[HelloReply, akka.NotUsed]
+  def sayHelloToAll(in: akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloRequest, akka.NotUsed]): akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloReply, akka.NotUsed]
   
 }
 
@@ -32,14 +31,14 @@ object GreeterService extends akka.grpc.ServiceDescription {
   val name = "GreeterService"
 
   val descriptor: com.google.protobuf.Descriptors.FileDescriptor =
-    HelloworldProto.javaDescriptor;
+    io.mahesh.grpcakka.GrpcakkaProto.javaDescriptor;
 
   object Serializers {
     import akka.grpc.scaladsl.ScalapbProtobufSerializer
     
-    val HelloRequestSerializer = new ScalapbProtobufSerializer(grpcakka.HelloRequest.messageCompanion)
+    val HelloRequestSerializer = new ScalapbProtobufSerializer(io.mahesh.grpcakka.HelloRequest.messageCompanion)
     
-    val HelloReplySerializer = new ScalapbProtobufSerializer(grpcakka.HelloReply.messageCompanion)
+    val HelloReplySerializer = new ScalapbProtobufSerializer(io.mahesh.grpcakka.HelloReply.messageCompanion)
     
   }
 
@@ -50,7 +49,7 @@ object GreeterService extends akka.grpc.ServiceDescription {
     import Serializers._
 
     
-    val sayHelloDescriptor: MethodDescriptor[HelloRequest, HelloReply] =
+    val sayHelloDescriptor: MethodDescriptor[io.mahesh.grpcakka.HelloRequest, io.mahesh.grpcakka.HelloReply] =
       MethodDescriptor.newBuilder()
         .setType(
    MethodDescriptor.MethodType.UNARY 
@@ -64,7 +63,7 @@ object GreeterService extends akka.grpc.ServiceDescription {
         .setSampledToLocalTracing(true)
         .build()
     
-    val sayHelloToAllDescriptor: MethodDescriptor[HelloRequest, HelloReply] =
+    val sayHelloToAllDescriptor: MethodDescriptor[io.mahesh.grpcakka.HelloRequest, io.mahesh.grpcakka.HelloReply] =
       MethodDescriptor.newBuilder()
         .setType(
   

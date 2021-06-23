@@ -5,8 +5,6 @@
 
 package io.mahesh.grpcakka
 
-import io.mahesh.grpcakka
-
 /** The request message containing the user's name.
   */
 @SerialVersionUID(0L)
@@ -63,13 +61,13 @@ final case class HelloRequest(
       }
     }
     def toProtoString: _root_.scala.Predef.String = _root_.scalapb.TextFormat.printToUnicodeString(this)
-    def companion = grpcakka.HelloRequest
+    def companion = io.mahesh.grpcakka.HelloRequest
     // @@protoc_insertion_point(GeneratedMessage[HelloRequest])
 }
 
-object HelloRequest extends scalapb.GeneratedMessageCompanion[HelloRequest] {
-  implicit def messageCompanion: scalapb.GeneratedMessageCompanion[HelloRequest] = this
-  def parseFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): HelloRequest = {
+object HelloRequest extends scalapb.GeneratedMessageCompanion[io.mahesh.grpcakka.HelloRequest] {
+  implicit def messageCompanion: scalapb.GeneratedMessageCompanion[io.mahesh.grpcakka.HelloRequest] = this
+  def parseFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): io.mahesh.grpcakka.HelloRequest = {
     var __name: _root_.scala.Predef.String = ""
     var `_unknownFields__`: _root_.scalapb.UnknownFieldSet.Builder = null
     var _done__ = false
@@ -86,34 +84,34 @@ object HelloRequest extends scalapb.GeneratedMessageCompanion[HelloRequest] {
           _unknownFields__.parseField(tag, _input__)
       }
     }
-    grpcakka.HelloRequest(
+    io.mahesh.grpcakka.HelloRequest(
         name = __name,
         unknownFields = if (_unknownFields__ == null) _root_.scalapb.UnknownFieldSet.empty else _unknownFields__.result()
     )
   }
-  implicit def messageReads: _root_.scalapb.descriptors.Reads[HelloRequest] = _root_.scalapb.descriptors.Reads{
+  implicit def messageReads: _root_.scalapb.descriptors.Reads[io.mahesh.grpcakka.HelloRequest] = _root_.scalapb.descriptors.Reads{
     case _root_.scalapb.descriptors.PMessage(__fieldsMap) =>
       _root_.scala.Predef.require(__fieldsMap.keys.forall(_.containingMessage eq scalaDescriptor), "FieldDescriptor does not match message type.")
-      grpcakka.HelloRequest(
+      io.mahesh.grpcakka.HelloRequest(
         name = __fieldsMap.get(scalaDescriptor.findFieldByNumber(1).get).map(_.as[_root_.scala.Predef.String]).getOrElse("")
       )
     case _ => throw new RuntimeException("Expected PMessage")
   }
-  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = HelloworldProto.javaDescriptor.getMessageTypes().get(0)
-  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = HelloworldProto.scalaDescriptor.messages(0)
+  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = GrpcakkaProto.javaDescriptor.getMessageTypes().get(0)
+  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = GrpcakkaProto.scalaDescriptor.messages(0)
   def messageCompanionForFieldNumber(__number: _root_.scala.Int): _root_.scalapb.GeneratedMessageCompanion[_] = throw new MatchError(__number)
   lazy val nestedMessagesCompanions: Seq[_root_.scalapb.GeneratedMessageCompanion[_ <: _root_.scalapb.GeneratedMessage]] = Seq.empty
   def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = throw new MatchError(__fieldNumber)
-  lazy val defaultInstance = grpcakka.HelloRequest(
+  lazy val defaultInstance = io.mahesh.grpcakka.HelloRequest(
     name = ""
   )
-  implicit class HelloRequestLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, HelloRequest]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, HelloRequest](_l) {
+  implicit class HelloRequestLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, io.mahesh.grpcakka.HelloRequest]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, io.mahesh.grpcakka.HelloRequest](_l) {
     def name: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.name)((c_, f_) => c_.copy(name = f_))
   }
   final val NAME_FIELD_NUMBER = 1
   def of(
     name: _root_.scala.Predef.String
-  ): HelloRequest = grpcakka.HelloRequest(
+  ): _root_.io.mahesh.grpcakka.HelloRequest = _root_.io.mahesh.grpcakka.HelloRequest(
     name
   )
   // @@protoc_insertion_point(GeneratedMessageCompanion[HelloRequest])

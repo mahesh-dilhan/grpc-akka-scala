@@ -1,7 +1,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/mahesh/play/akka-grpc-scala/target/scala-2.13/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GreeterService$MethodDescriptors$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceClient$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$2.class[0m
@@ -31,4 +29,64 @@
 [0m[[0m[0mdebug[0m] [0m[0m	GreeterService.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GreeterService$Serializers$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Empty.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService$MethodDescriptors$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloReply.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloReply$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloworldProto.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloRequest$HelloRequestLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloworldProto$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloReply$HelloReplyLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DefaultGreeterServiceClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceClientPowerApi.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DefaultGreeterServiceClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService$Serializers$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Empty.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloReply.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceClientPowerApi.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcakkaProto$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService$Serializers$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService$MethodDescriptors$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DefaultGreeterServiceClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DefaultGreeterServiceClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcakkaProto.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloReply$HelloReplyLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloRequest$HelloRequestLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GreeterServiceHandler$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Empty.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelloReply$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/mahesh/play/akka-grpc-scala/target/scala-2.13/classes.bak[0m

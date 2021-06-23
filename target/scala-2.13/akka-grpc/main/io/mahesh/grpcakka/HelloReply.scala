@@ -5,8 +5,6 @@
 
 package io.mahesh.grpcakka
 
-import io.mahesh.grpcakka
-
 /** The response message containing the greetings
   */
 @SerialVersionUID(0L)
@@ -63,13 +61,13 @@ final case class HelloReply(
       }
     }
     def toProtoString: _root_.scala.Predef.String = _root_.scalapb.TextFormat.printToUnicodeString(this)
-    def companion = grpcakka.HelloReply
+    def companion = io.mahesh.grpcakka.HelloReply
     // @@protoc_insertion_point(GeneratedMessage[HelloReply])
 }
 
-object HelloReply extends scalapb.GeneratedMessageCompanion[HelloReply] {
-  implicit def messageCompanion: scalapb.GeneratedMessageCompanion[HelloReply] = this
-  def parseFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): HelloReply = {
+object HelloReply extends scalapb.GeneratedMessageCompanion[io.mahesh.grpcakka.HelloReply] {
+  implicit def messageCompanion: scalapb.GeneratedMessageCompanion[io.mahesh.grpcakka.HelloReply] = this
+  def parseFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): io.mahesh.grpcakka.HelloReply = {
     var __message: _root_.scala.Predef.String = ""
     var `_unknownFields__`: _root_.scalapb.UnknownFieldSet.Builder = null
     var _done__ = false
@@ -86,34 +84,34 @@ object HelloReply extends scalapb.GeneratedMessageCompanion[HelloReply] {
           _unknownFields__.parseField(tag, _input__)
       }
     }
-    grpcakka.HelloReply(
+    io.mahesh.grpcakka.HelloReply(
         message = __message,
         unknownFields = if (_unknownFields__ == null) _root_.scalapb.UnknownFieldSet.empty else _unknownFields__.result()
     )
   }
-  implicit def messageReads: _root_.scalapb.descriptors.Reads[HelloReply] = _root_.scalapb.descriptors.Reads{
+  implicit def messageReads: _root_.scalapb.descriptors.Reads[io.mahesh.grpcakka.HelloReply] = _root_.scalapb.descriptors.Reads{
     case _root_.scalapb.descriptors.PMessage(__fieldsMap) =>
       _root_.scala.Predef.require(__fieldsMap.keys.forall(_.containingMessage eq scalaDescriptor), "FieldDescriptor does not match message type.")
-      grpcakka.HelloReply(
+      io.mahesh.grpcakka.HelloReply(
         message = __fieldsMap.get(scalaDescriptor.findFieldByNumber(1).get).map(_.as[_root_.scala.Predef.String]).getOrElse("")
       )
     case _ => throw new RuntimeException("Expected PMessage")
   }
-  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = HelloworldProto.javaDescriptor.getMessageTypes().get(1)
-  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = HelloworldProto.scalaDescriptor.messages(1)
+  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = GrpcakkaProto.javaDescriptor.getMessageTypes().get(1)
+  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = GrpcakkaProto.scalaDescriptor.messages(1)
   def messageCompanionForFieldNumber(__number: _root_.scala.Int): _root_.scalapb.GeneratedMessageCompanion[_] = throw new MatchError(__number)
   lazy val nestedMessagesCompanions: Seq[_root_.scalapb.GeneratedMessageCompanion[_ <: _root_.scalapb.GeneratedMessage]] = Seq.empty
   def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = throw new MatchError(__fieldNumber)
-  lazy val defaultInstance = grpcakka.HelloReply(
+  lazy val defaultInstance = io.mahesh.grpcakka.HelloReply(
     message = ""
   )
-  implicit class HelloReplyLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, HelloReply]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, HelloReply](_l) {
+  implicit class HelloReplyLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, io.mahesh.grpcakka.HelloReply]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, io.mahesh.grpcakka.HelloReply](_l) {
     def message: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.message)((c_, f_) => c_.copy(message = f_))
   }
   final val MESSAGE_FIELD_NUMBER = 1
   def of(
     message: _root_.scala.Predef.String
-  ): HelloReply = grpcakka.HelloReply(
+  ): _root_.io.mahesh.grpcakka.HelloReply = _root_.io.mahesh.grpcakka.HelloReply(
     message
   )
   // @@protoc_insertion_point(GeneratedMessageCompanion[HelloReply])

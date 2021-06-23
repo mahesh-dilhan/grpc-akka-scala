@@ -21,7 +21,7 @@ object GreeterClient {
     implicit val sys: ActorSystem[_] = ActorSystem(Behaviors.empty, "GreeterClient")
     implicit val ec: ExecutionContext = sys.executionContext
 
-    val client = GreeterServiceClient(GrpcClientSettings.fromConfig("helloworld.GreeterService"))
+    val client = GreeterServiceClient(GrpcClientSettings.fromConfig("grpcakka.GreeterService"))
 
     val names =
       if (args.isEmpty) List("Alice", "Bob")

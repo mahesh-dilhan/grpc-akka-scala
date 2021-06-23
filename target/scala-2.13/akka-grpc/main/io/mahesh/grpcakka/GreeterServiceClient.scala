@@ -52,32 +52,32 @@ final class DefaultGreeterServiceClient(settings: GrpcClientSettings)(implicit s
   
     /**
      * Lower level "lifted" version of the method, giving access to request metadata etc.
-     * prefer sayHello(com.example.helloworld.HelloRequest) if possible.
+     * prefer sayHello(io.mahesh.grpcakka.HelloRequest) if possible.
      */
     
-      override def sayHello(): SingleResponseRequestBuilder[HelloRequest, HelloReply] =
+      override def sayHello(): SingleResponseRequestBuilder[io.mahesh.grpcakka.HelloRequest, io.mahesh.grpcakka.HelloReply] =
         sayHelloRequestBuilder(clientState.internalChannel)
     
 
     /**
      * For access to method metadata use the parameterless version of sayHello
      */
-    def sayHello(in: HelloRequest): scala.concurrent.Future[HelloReply] =
+    def sayHello(in: io.mahesh.grpcakka.HelloRequest): scala.concurrent.Future[io.mahesh.grpcakka.HelloReply] =
       sayHello().invoke(in)
   
     /**
      * Lower level "lifted" version of the method, giving access to request metadata etc.
-     * prefer sayHelloToAll(akka.stream.scaladsl.Source[com.example.helloworld.HelloRequest, akka.NotUsed]) if possible.
+     * prefer sayHelloToAll(akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloRequest, akka.NotUsed]) if possible.
      */
     
-      override def sayHelloToAll(): StreamResponseRequestBuilder[akka.stream.scaladsl.Source[HelloRequest, akka.NotUsed], HelloReply] =
+      override def sayHelloToAll(): StreamResponseRequestBuilder[akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloRequest, akka.NotUsed], io.mahesh.grpcakka.HelloReply] =
         sayHelloToAllRequestBuilder(clientState.internalChannel)
     
 
     /**
      * For access to method metadata use the parameterless version of sayHelloToAll
      */
-    def sayHelloToAll(in: akka.stream.scaladsl.Source[HelloRequest, akka.NotUsed]): akka.stream.scaladsl.Source[HelloReply, akka.NotUsed] =
+    def sayHelloToAll(in: akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloRequest, akka.NotUsed]): akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloReply, akka.NotUsed] =
       sayHelloToAll().invoke(in)
   
 
@@ -96,18 +96,18 @@ trait GreeterServiceClientPowerApi {
   
     /**
      * Lower level "lifted" version of the method, giving access to request metadata etc.
-     * prefer sayHello(com.example.helloworld.HelloRequest) if possible.
+     * prefer sayHello(io.mahesh.grpcakka.HelloRequest) if possible.
      */
     
-      def sayHello(): SingleResponseRequestBuilder[HelloRequest, HelloReply] = ???
+      def sayHello(): SingleResponseRequestBuilder[io.mahesh.grpcakka.HelloRequest, io.mahesh.grpcakka.HelloReply] = ???
     
   
     /**
      * Lower level "lifted" version of the method, giving access to request metadata etc.
-     * prefer sayHelloToAll(akka.stream.scaladsl.Source[com.example.helloworld.HelloRequest, akka.NotUsed]) if possible.
+     * prefer sayHelloToAll(akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloRequest, akka.NotUsed]) if possible.
      */
     
-      def sayHelloToAll(): StreamResponseRequestBuilder[akka.stream.scaladsl.Source[HelloRequest, akka.NotUsed], HelloReply] = ???
+      def sayHelloToAll(): StreamResponseRequestBuilder[akka.stream.scaladsl.Source[io.mahesh.grpcakka.HelloRequest, akka.NotUsed], io.mahesh.grpcakka.HelloReply] = ???
     
   
 
