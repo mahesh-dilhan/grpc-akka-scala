@@ -204,7 +204,7 @@
               <arguments>
                 <argument>-classpath</argument>
                 <classpath />
-                <argument>com.example.helloworld.GreeterServer</argument>
+                <argument>io.mahesh.grpcakka.GreeterServer</argument>
               </arguments>
             </configuration>
           </execution>
